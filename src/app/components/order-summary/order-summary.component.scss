@@ -9,6 +9,7 @@
     padding: 0;
     margin: 0;
   }
+ 
 
   .order-card-container {
     background-color: white;
@@ -25,5 +26,16 @@
   }
   #full-order{
     font-size: 18px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .order-summary {
+    img{
+      max-width: 20px;
+    }
+    p,
+    span {
+      font-size: 12px !important;
+    }
   }
 }

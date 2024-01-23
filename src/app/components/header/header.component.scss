@@ -12,3 +12,11 @@
     }
   }
 }
+
+@media screen and (max-width: 480px) {
+  .header-container{
+  img{
+    max-width: 100px;
+  }
+  }
+}
