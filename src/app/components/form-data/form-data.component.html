@@ -1,0 +1,74 @@
+<div class="form-data my-4">
+  <div class="d-flex form-data-search">
+    <div class="input-group mb-3">
+      <span class="input-group-text" id="basic-addon1">
+        <span class="pi pi-search"></span>
+      </span>
+      <input type="text" class="form-control" placeholder="بحث" aria-label="Username" aria-describedby="basic-addon1">
+    </div>
+  </div>
+  <div class="divider"></div>
+  <div class="form-data-inputs container-fluid my-4">
+    <div class="row">
+      <div class="d-flex flex-column gap-2 col-4 mt-3">
+        <label for="numrec">رقم السجل التجاري</label>
+        <input pInputText id="numrec" aria-describedby="numrec-help" />
+      </div>
+      <div class="d-flex flex-column gap-2 col-4 mt-3">
+        <label>الرقم الموحد للمنشأة</label>
+        <input type="text" />
+      </div>
+      <div class="d-flex flex-column gap-2 col-4 mt-3">
+        <label> اسم الجهة</label>
+        <input type="text" />
+      </div>
+      <div class="d-flex flex-column gap-2 col-4 mt-3">
+        <label> رقم هوية مقدم الطلب</label>
+        <input type="text" />
+      </div>
+      <div class="d-flex flex-column gap-2 col-4 mt-3">
+        <label> تاريخ اتخاذ الإجراء (من-إلى)</label>
+        <input type="date" id="customDateInput"/>
+      </div>
+      <div class="d-flex flex-column gap-2 col-4 mt-3">
+        <label>تاريخ الإسناد (من - إلى) </label>
+        <input type="date" id="customDateInput"/>
+      </div>
+      <div class="d-flex flex-column gap-2 col-4 mt-3">
+        <label> تاريخ اكتمال الطلب (من-إلى)</label>
+        <input type="date" id="customDateInput"/>
+      </div>
+      <div class="d-flex flex-column gap-2 col-8">
+        <label>الخدمة </label>
+        <p-cascadeSelect optionLabel="cname" optionGroupLabel="name" [optionGroupChildren]="['states', 'cities']"
+          [style]="{ width: '100%' }" placeholder="ترخيص خدمات البيع بالجملة - ترخيص فئوي عام">
+        </p-cascadeSelect>
+      </div>
+      <div class="d-flex flex-column gap-2 col-4 mt-3">
+        <label>رقم الطلب </label>
+        <input type="text" />
+      </div>
+      <div class="d-flex flex-column gap-2 col-4 mt-3">
+        <label>رقم الفاتورة </label>
+        <input type="text" />
+      </div>
+      <div class="d-flex flex-column gap-2 col-4 mt-3">
+        <label> الإجراء</label>
+        <input type="text" />
+      </div>
+      <div class="d-flex flex-column gap-2 col-4 mt-3">
+        <label>الحالة </label>
+        <input type="text" />
+      </div>
+    </div>
+  </div>
+  <div class="d-flex justify-content-end form-data-btns">
+    <!-- Create native styling here for more practicals options -->
+    <button class="primary-btn">
+      أعادة تعيين ادوات البحث
+    </button>
+    <button class="secondary-btn">
+      بحث
+    </button>
+  </div>
+</div>

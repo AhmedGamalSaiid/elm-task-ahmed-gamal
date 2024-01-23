@@ -1,0 +1,19 @@
+td {
+  span {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+  }
+}
+
+tr {
+  td {
+    text-align: right;
+    padding: 1rem;
+  }
+}
+
+::ng-deep .p-table .p-datatable-tbody tr {
+  border-bottom: 1px solid #ccc; // Adjust the border style and color as needed
+}

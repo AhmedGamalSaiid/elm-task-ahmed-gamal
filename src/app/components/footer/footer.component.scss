@@ -1,0 +1,19 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  h3 {
+    font-size: 16px;
+    color: white;
+
+  }
+
+  p {
+    font-size: 13px;
+    color: rgb(146, 146, 146);
+    margin: 0;
+    padding: 0;
+  }
+
+}

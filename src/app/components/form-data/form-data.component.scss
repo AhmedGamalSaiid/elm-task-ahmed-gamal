@@ -1,0 +1,86 @@
+.form-data {
+  &-search {
+    direction: ltr;
+
+    * {
+      background-color: transparent;
+      border: 0;
+    }
+
+  }
+
+  &-inputs {
+    label {
+      font-size: 13px;
+      color: #888888;
+    }
+
+    input {
+      background-color: #FAFAFA;
+      border: 0;
+      padding: 0.5rem;
+    }
+
+  }
+
+  &-btns {
+    button {
+      padding: 0.7rem 1.5rem;
+      font-size: 15px;
+      transition: all 0.5s;
+    }
+
+    .primary-btn {
+      background-color: transparent;
+      border: 1px solid #081DF5;
+      color: #081DF5;
+      margin: 0 1rem;
+    }
+
+    .secondary-btn {
+      background-color: #081DF5;
+      border: 1px solid #081DF5;
+      color: white;
+    }
+
+    .primary-btn:hover {
+      background-color: #081DF5;
+      border: 1px solid #081DF5;
+      color: white;
+    }
+
+    .secondary-btn:hover {
+      background-color: white;
+      border: 1px solid #081DF5;
+      color: #081DF5;
+    }
+  }
+}
+
+.divider {
+  width: 100%;
+  border-bottom: 1px solid #e9e9e9;
+  margin: 0.5rem auto;
+}
+
+::ng-deep .p-cascadeselect {
+  background-color: #FAFAFA;
+  border: 0;
+  padding: 0.5rem;
+}
+#customDateInput::-webkit-datetime-edit-day-field,
+#customDateInput::-webkit-datetime-edit-month-field,
+#customDateInput::-webkit-datetime-edit-year-field {
+  display: none;
+}
+
+input[type="date"]::-webkit-datetime-edit-month-field,
+input[type="date"]::-webkit-datetime-edit-year-field {
+  display: none;
+}
+
+/* Set a transparent border to hide the remaining slash */
+input[type="date"]::-webkit-datetime-edit-text {
+  color: transparent;
+  border: 1px solid transparent;
+}

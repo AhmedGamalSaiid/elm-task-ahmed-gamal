@@ -1,0 +1,29 @@
+.order-summary {
+  background-color: #F0F0F6;
+  padding: 1rem;
+
+  p,
+  span {
+    font-size: 18px;
+    color: #616161;
+    padding: 0;
+    margin: 0;
+  }
+
+  .order-card-container {
+    background-color: white;
+
+    p {
+      font-size: 15px;
+      color: #616161;
+    }
+
+    span {
+      font-size: 26px;
+      color: #0000FF;
+    }
+  }
+  #full-order{
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,14 @@
+.header-container{
+  ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    a{
+      text-decoration: none;
+      color: rgb(0, 0, 0);
+    }
+  }
+}

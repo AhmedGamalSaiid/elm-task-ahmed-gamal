@@ -1,0 +1,39 @@
+<div class="order-summary">
+  <div class="d-flex align-items-center px-3">
+    <p>ملخص الطلبات</p>
+    <span class="pi pi-angle-down me-2"></span>
+  </div>
+  <!-- Use Dynamic Data if it's come from backend for  -->
+  <div class="container-fluid">
+    <div class="row d-flex align-items-center my-3 justify-content-between">
+      <div class="col-12 col-md-6 col-lg-4 col-xl-3 my-2" *ngFor="let order of orders">
+        <div class="d-flex p-3 order-card-container justify-content-between align-items-center">
+          <div>
+            <p>
+              {{order.name}}
+            </p>
+            <span>
+              {{order.quantity}}
+            </span>
+          </div>
+          <div>
+            <img [src]="order.icon">
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 col-xl-3 my-2">
+        <div class="d-flex p-3 order-card-container justify-content-between align-items-center">
+          <div>
+            <span id="full-order">
+              1,344
+            </span>
+          </div>
+          <p>
+            طلب مكتمل
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
